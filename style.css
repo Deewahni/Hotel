@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color: #194350;
+    --secondary-color:  #ff8882;
+    --tertiary-color: #6e7582;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #f3f4ed;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h2, h3 {
+    color: var(--primary-color);
+}
+
+.menu-container {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 20px;
+    
+}
+
+#navbar {
+    background: var(--primary-color);
+    padding: 2px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+}
+
+li {
+    padding:10px 0 0 20px;
+    font-weight: 500;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+.option {
+    color: var(--secondary-color);
+}
+
+.option:hover {
+    color: #fff;
+}
+
+/* Showcase */
+#showcase {
+    background: url('images/bg1.png') center center/cover;
+    height: 90vh;
+    color: #fff;
+}
+
+#showcase::after {
+    content:'';
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: var(--secondary-color);
+    z-index: 1;
+    opacity: 0.5;
+    mix-blend-mode: color;
+}
+
+.showcase-content {
+    position: absolute;
+    display: flex;
+    bottom: 60px;
+    padding: 30px;
+    z-index: 10000;
+}
+
+.l-heading {
+    width: 10ch;
+    font-weight: 300;
+    font-size: 10rem;
+    line-height: 1;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+   
+}
+
+.l-heading span {
+    font-weight: 900;
+}
+
+/* Rooms and Cards */
+
+#room {
+    display: grid;
+    place-items: center;
+    margin: 70px auto;
+
+}
+
+.content {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.room-label {
+    margin-top: 20px;
+    font-size: 3rem;
+    text-align: center;
+}
+.card-container {
+    background: #fff;
+    position: relative;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 10px 10px 20px rgba(13, 39, 80, .16), 
+                -10px -10px 20px rgba(255, 255, 255, 1);
+    flex: 1 1 250px;
+    flex: 0 1 200px;
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card-container:hover {
+    height: 325px;
+}
+
+.label {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.detail {
+    padding: 5px;
+}
+
+.desc {
+    color: var(--tertiary-color);
+    font-size: 12px;
+    height: 9ch;
+    margin-top: 5px;
+}
+
+.price {
+    color: teal;
+    font-weight: 600;
+}
+
+.book-btn {
+    margin: 8px 0;
+    width: 100%;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background: teal;
+    transition: .5s all ease-in-out;
+}
+
+/* Feature Section */
+#features {
+    margin: 80px 0;
+    padding: 100px 20px;
+}
+
+.feature-content{
+    max-width: 1100px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+}
+
+.feature-desc {
+    margin: 25px;
+    padding-top: 30px;
+    width: 80%;
+}
+
+.feature-desc .book-btn {
+    width: 80%;
+    padding: 8px;
+    margin: 20px;
+}
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.carousel-item{
+    position: relative;
+    width: 300px;
+    margin: 10px;
+
+}
+.carousel-item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    opacity: 0.2;
+}
+.carousel-desc {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.carousel-desc h3{
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-desc p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Contact */
+#contact {
+    background-color: var(--primary-color);
+    margin-top: 100px;
+    padding: 10px 0 50px 0;
+}
+
+#contact h2 {
+    color: var(--secondary-color);
+    padding: 0 0 30px 50px;
+}
+
+.contact{
+    max-width: 900px;
+    margin: auto;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+.send {
+    background-color: teal;
+    padding: 5px;
+}
+
+.send:hover {
+    background-color: var(--tertiary-color);
+}
+
+.form p, label, .socmed p{
+    color: var(--tertiary-color);
+}
+
+.socmed{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+/* About Page// About section */
+
+#about {
+    max-width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel {
+    width: 50%;
+    height: auto;
+    margin:20px 0;
+    border: 15px solid #fff;
+    transform: rotate(-10deg);
+    box-shadow: 0 32px 70px -40px rgba(17, 96, 96, 1),
+             -32px 0 70px -40px rgba(17, 96, 96, .60);
+}
+
+.description {
+    margin: 50px;
+}
+
+.description p {
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
+
+/* Location Section */
+
+#location {
+    margin: 100px 0;
+    background: var(--primary-color);
+    color:var(--secondary-color);
+}
+
+.loc-container {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  
+}
+
+.map {
+    width: 50%;
+}
+
+.loc-container .description{
+    width: 50%;
+    padding: 20px;
+}
+
+.loc-container .description h3 {
+    color:var(--secondary-color);
+    line-height: 0.5;
+}
+
+.loc-container .description p {
+    width: 30ch;
+}
+
+/* Review Section */
+#review {
+    text-align: center;
+}
+
+.review-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 50px;
+
+}
+.comment {
+    background: #fff;
+    width:500px;
+    padding: 30px;
+    margin: 10px;
+    font-size: 0.9rem;
+}
+
+/* Personnel Section */
+#personnel{
+    text-align: center;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    max-width: 900px;
+}
+
+.container .card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+.container .card:hover .box{
+    transform: rotateY(180deg);
+}
+
+.container .card .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.container .card .box .imgBx img {
+    border-radius: 50%;
+    width: 70%;
+    object-fit: cover;
+}
+
+.container .card .box .contentBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fe0061, #ffeb3b);
+    backface-visibility: hidden;
+    padding: 15px;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.container .card .box .contentBx div p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+/* Footer for About */
+#second-footer {
+    background: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+}
+
+#second-footer p, #second-footer i {
+    color: var(--secondary-color);
+    margin: 5px;
+}
