@@ -1,0 +1,118 @@
+.menu .option {
+    font-size: 0.9rem;
+}
+
+#showcase {
+    height: 50vh;
+    position: relative;
+}
+
+#showcase::after {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+}
+
+.l-heading {
+    width: 10ch;
+    font-weight: 300;
+    font-size: 4rem;
+    position: absolute;
+   bottom: 0;
+}
+
+.room-label {
+    font-size: 2rem;
+}
+
+#room {
+    margin: 0;
+}
+
+#room p {
+    font-size: 0.8rem;
+}
+
+#features {
+    margin: 0;
+    padding-top: 0;
+}
+
+.feature-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    height: auto;
+}
+
+.feature-desc {
+   width: 95%;
+}
+
+.feature-desc p {
+    font-size: 0.85rem;
+}
+
+#contact {
+    margin-top: 20px;
+}
+
+.form {
+    padding-bottom: 100px;
+}
+
+.socmed {
+    padding: 10px;
+    text-align: center;
+}
+
+.socmed p {
+    font-size: 0.8rem;
+}
+
+.media i  {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.media {
+    font-size: 0.7rem;
+}
+
+
+/* ABOUT US */
+
+.loc-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.map, .loc-container .description {
+    width: 100%;
+}
+.loc-container .description {
+    margin: 20px;
+}
+
+.review-container {
+    flex-direction: column;
+}
+
+.comment {
+    width: 100%;
+}
+
+#personnel {
+    padding: 10px;
+}
+
+.box {
+    box-shadow: 0 32px 70px -40px rgba(17, 96, 96, 1);
+}
+
+#second-footer {
+    display: flex;
+    flex-direction: column;
+}
