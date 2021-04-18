@@ -1,2 +1,2 @@
 # Hotel
-this is a simple landing page for a hotel website. I didn't include the responsiveness in this project.
+this is a simple landing page for a hotel website. This is a practice project. I have learned that it is important not to repeat yourself. I learned it the hard way. I didn't put classes to some elements that need classing mot realizing that i needed to readjust those elements later for mobile responsiveness. It is exhausting! but I have learned that I need to note those elements that play important role and not forget to put them in classes so I won't have to trail through everything.
